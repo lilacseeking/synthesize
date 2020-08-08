@@ -1,0 +1,11 @@
+# Project exclude paths
+/synthesize-api/target/
+/synthesize-core/target/
+/synthesize-gateway/target/
+/synthesize-infrastructure/target/
+/synthesize-order-service/target/
+/synthesize-pay-service/target/
+/synthesize-schedule/target/
+/synthesize-share-param/target/
+/synthesize-third-app/target/
+/synthesize-user-service/target/

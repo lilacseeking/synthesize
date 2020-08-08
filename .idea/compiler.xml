@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="synthesize-infrastructure" />
+        <module name="synthesize-user-service" />
+        <module name="synthesize-schedule" />
+        <module name="synthesize-pay-service" />
+        <module name="synthesize-core" />
+        <module name="synthesize-order-service" />
+        <module name="synthesize-pay" />
+        <module name="synthesize-api" />
+        <module name="synthesize-third-app" />
+        <module name="synthesize-gateway" />
+        <module name="synthesize-share-param" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="synthesize-pay" target="1.8" />
+      <module name="synthesize-share-params" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

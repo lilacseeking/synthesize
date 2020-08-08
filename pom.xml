@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.lilacseeking</groupId>
+    <artifactId>synthesize-parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <modules>
+        <module>synthesize-infrastructure</module>
+        <module>synthesize-share-param</module>
+        <module>synthesize-api</module>
+        <module>synthesize-schedule</module>
+        <module>synthesize-core</module>
+        <module>synthesize-third-app</module>
+        <module>synthesize-gateway</module>
+        <module>synthesize-user-service</module>
+        <module>synthesize-order-service</module>
+        <module>synthesize-pay-service</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Spring Boot -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring-boot-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!--SpringCloud-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud-version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- lombok -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.verson}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!-- apollo-client -->
+            <dependency>
+                <groupId>com.ctrip.framework.apollo</groupId>
+                <artifactId>apollo-client</artifactId>
+                <version>${apollo.version}</version>
+            </dependency>
+
+            <!-- fastjson -->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+            <!-- 引入MYSQL数据库 -->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>${mysql-connector-version}</version>
+            </dependency>
+            <!-- Apache Dubbo  -->
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-dependencies-bom</artifactId>
+                <version>${dubbo.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo-spring-boot-starter</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>${dubbo.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <properties>
+        <appName>synthesize</appName>
+        <synthesize-version>1.0-SNAPSHOT</synthesize-version>
+        <java.verson>1.8</java.verson>
+        <spring-boot-version>2.2.7.RELEASE</spring-boot-version>
+        <spring-cloud-version>Hoxton.SR4</spring-cloud-version>
+        <spring-framework.version>4.3.14.RELEASE</spring-framework.version>
+        <lombok.verson>1.18.12</lombok.verson>
+        <apollo.version>1.5.1</apollo.version>
+        <fastjson.version>1.2.68</fastjson.version>
+        <zookeeper.version>3.6.1</zookeeper.version>
+        <curator-recipes.version>4.3.0</curator-recipes.version>
+        <commons-lang3.verson>3.4</commons-lang3.verson>
+        <hutool-all.version>5.3.5</hutool-all.version>
+        <spring-maven-plugin>2.3.0.RELEASE</spring-maven-plugin>
+        <mysql-connector-version>5.1.47</mysql-connector-version>
+        <query-dsl.version>4.3.1</query-dsl.version>
+        <guava.version>23.0</guava.version>
+        <sharding-jdbc.version>4.0.0-RC1</sharding-jdbc.version>
+        <commons-dbcp2.version>2.7.0</commons-dbcp2.version>
+        <dubbo.version>2.7.6</dubbo.version>
+    </properties>
+
+    <build>
+        <plugins>
+            <!--热部署-->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-maven-plugin}</version>
+                <configuration>
+                    <fork>true</fork>
+                </configuration>
+            </plugin>
+            <!--QueryDSL对象生成-->
+            <plugin>
+                <groupId>com.mysema.maven</groupId>
+                <artifactId>apt-maven-plugin</artifactId>
+                <version>1.1.3</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>process</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>target/generated-sources/java</outputDirectory>
+                            <processor>com.querydsl.apt.jpa.JPAAnnotationProcessor</processor>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <!--Maven编译插件-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
