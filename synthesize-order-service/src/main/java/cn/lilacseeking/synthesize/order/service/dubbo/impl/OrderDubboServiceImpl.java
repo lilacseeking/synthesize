@@ -9,7 +9,7 @@ import org.apache.dubbo.config.annotation.Service;
  * @Description:
  */
 @Service
-public class OrderServiceImpl implements IOrderService {
+public class OrderDubboServiceImpl implements IOrderService {
 
     @Override
     public Object getOrderById() {

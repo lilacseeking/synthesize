@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @Description:
  */
 @Service
-public class UserServiceImpl implements IUserService {
+public class UserDubboServiceImpl implements IUserService {
 
     @Autowired
     private UserInfoService userInfoService;

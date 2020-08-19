@@ -17,11 +17,11 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan(basePackages = {"cn.lilacseeking.*"})
 @EnableDiscoveryClient
 @EnableDubbo(scanBasePackages = "cn.lilacseeking.synthesize.*")
-public class OrderServiceApplication {
+public class UserServiceApplication {
 
     public static void main(String[] args) {
         try {
-            SpringApplication.run(OrderServiceApplication.class, args);
+            SpringApplication.run(UserServiceApplication.class, args);
         } catch (Exception e) {
             e.printStackTrace();
         }

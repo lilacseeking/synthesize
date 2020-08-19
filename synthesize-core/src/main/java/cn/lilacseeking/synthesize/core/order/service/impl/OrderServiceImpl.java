@@ -1,5 +1,6 @@
 package cn.lilacseeking.synthesize.core.order.service.impl;
 
+import cn.lilacseeking.synthesize.core.order.service.OrderService;
 import cn.lilacseeking.synthesize.core.shading.model.UserInfoPO;
 import cn.lilacseeking.synthesize.core.shading.service.UserInfoService;
 import cn.lilacseeking.synthesize.infrastructure.utils.BeanCopyUtil;
@@ -19,7 +20,7 @@ import cn.lilacseeking.synthesize.core.shading.repository.UserInfoRepository;
 
 
 @Service
-public class OrderServiceImpl implements UserInfoService {
+public class OrderServiceImpl implements OrderService {
 
     @Autowired
     UserInfoRepository UserInfoRepository;
