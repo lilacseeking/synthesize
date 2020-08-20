@@ -1,4 +1,4 @@
-package cn.lilacseeking.synthesize.gateway.configration;
+package cn.lilacseeking.synthesize.order.configuration;
 
 import com.ctrip.framework.apollo.Config;
 import com.ctrip.framework.apollo.model.ConfigChange;
@@ -11,7 +11,6 @@ import com.google.common.collect.Maps;
 import lombok.*;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
-
 import javax.annotation.PostConstruct;
 import java.util.List;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package cn.lilacseeking.synthesize.gateway.configration;
+package cn.lilacseeking.synthesize.pay.configuration;
 
 import com.ctrip.framework.apollo.Config;
 import com.ctrip.framework.apollo.model.ConfigChange;
