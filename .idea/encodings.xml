@@ -15,11 +15,19 @@
     <file url="file://$PROJECT_DIR$/synthesize-order-service/src/main/resources/META-INF" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/synthesize-order-service/target/generated-sources/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/synthesize-pay-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/synthesize-pay-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/synthesize-pay-service/src/main/resources/bootstrap.properties" charset="GBK" />
     <file url="file://$PROJECT_DIR$/synthesize-pay-service/target/generated-sources/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/synthesize-schedule/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/synthesize-schedule/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/synthesize-schedule/src/main/resources/bootstrap.properties" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/synthesize-schedule/target/generated-sources/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/synthesize-share-param/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/synthesize-share-param/target/generated-sources/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/synthesize-third-app/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/synthesize-third-app/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/synthesize-third-app/src/main/resources/bootstrap.properties" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/synthesize-third-app/target/generated-sources/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/synthesize-user-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/synthesize-user-service/src/main/resources" charset="GBK" />
     <file url="file://$PROJECT_DIR$/synthesize-user-service/src/main/resources/META-INF" charset="UTF-8" />

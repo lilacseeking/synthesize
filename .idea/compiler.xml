@@ -7,17 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="synthesize-infrastructure" />
         <module name="synthesize-user-service" />
-        <module name="synthesize-schedule" />
-        <module name="synthesize-gateway" />
-        <module name="synthesize-share-param" />
-        <module name="synthesize-order-service" />
         <module name="synthesize-pay" />
+        <module name="synthesize-gateway" />
         <module name="synthesize-api" />
         <module name="synthesize-third-app" />
         <module name="synthesize-core" />
         <module name="synthesize-pay-service" />
+        <module name="synthesize-order-service" />
+        <module name="synthesize-share-param" />
+        <module name="synthesize-infrastructure" />
+        <module name="synthesize-schedule" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
